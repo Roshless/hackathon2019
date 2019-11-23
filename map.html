@@ -54,7 +54,7 @@
 	var popup = L.popup();
 
 	function onMapClick(e) {
-		var pointLabel = prompt("Please enter your name", "Harry Potter");
+		var pointLabel = prompt("Notka informacyjna", "Notka informacyjna");
 		var newMarker = new L.marker(e.latlng).addTo(mymap).bindPopup(pointLabel).openPopup();
 		markers.push(newMarker);
 		console.log(markers);
